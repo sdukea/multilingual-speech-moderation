@@ -43,8 +43,8 @@ def main():
     classifier = MuRILClassifier()
     model = classifier.get_model()
 
-    training_args = TrainingArguments(output_dir="outputs/checkpoints", overwrite_output_dir=True,
-                                      num_train_epochs=NUM_EPOCHS, learning_rate=LEARNING_RATE, 
+    training_args = TrainingArguments(output_dir="outputs/checkpoints",
+                                      num_train_epochs=NUM_EPOCHS, learning_rate=LEARNING_RATE,
 
                                       per_device_train_batch_size=BATCH_SIZE, 
                                       per_device_eval_batch_size=BATCH_SIZE, 
